@@ -22,7 +22,7 @@
         <TextBox x:Name="tbTSpeedMax" HorizontalAlignment="Right" Margin="0,0,360,25" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="100" TabIndex="2" PlaceholderText="1 - 20 " InputScope="NumericPin"/>
         <TextBlock x:Name="lblTMinSpeed" HorizontalAlignment="Right" Margin="0,25,460,0" TextWrapping="Wrap" Text="Tortoise Minimum Speed" VerticalAlignment="Top" Height="32" Width="200" TextAlignment="Center"/>
         <TextBlock x:Name="lblTMaxSpeed" HorizontalAlignment="Right" Margin="0,91,460,0" TextWrapping="Wrap" Text="Tortoise Maximum Speed" VerticalAlignment="Top" Height="32" Width="200" TextAlignment="Center"/>
-        <TextBox x:Name="tbDistance" HorizontalAlignment="Right" Margin="0,67,221,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" Grid.Row="1" TabIndex="7" PlaceholderText="100 - 1000" InputScope="NumericPin"/>
+        <TextBox x:Name="tbDistance" HorizontalAlignment="Right" Margin="0,67,221,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" Grid.Row="1" TabIndex="7" PlaceholderText="100 - 10000" InputScope="Number" IsTextPredictionEnabled="False" IsSpellCheckEnabled="False"/>
         <TextBlock x:Name="lblDistance" HorizontalAlignment="Right" Margin="0,67,326,0" TextWrapping="Wrap" Text="Race Distance" VerticalAlignment="Top" Height="32" Width="200" Grid.Row="1" TextAlignment="Center"/>
         <TextBlock x:Name="tbWin" HorizontalAlignment="Center" Margin="40,162,35,548" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="1005" Height="75" TextAlignment="Center"/>
         <Button x:Name="btnRace" Content="Race!" HorizontalAlignment="Left" Margin="106,49,0,0" Grid.Row="1" VerticalAlignment="Top" Width="150" Height="50" TabIndex="0" Click="btnRace_Click"/>
