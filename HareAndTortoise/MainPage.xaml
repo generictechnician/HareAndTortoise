@@ -26,10 +26,10 @@
         <TextBlock x:Name="lblDistance" HorizontalAlignment="Right" Margin="0,67,326,0" TextWrapping="Wrap" Text="Race Distance" VerticalAlignment="Top" Height="32" Width="200" Grid.Row="1" TextAlignment="Center"/>
         <TextBlock x:Name="tbWin" HorizontalAlignment="Center" Margin="40,162,35,548" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="1005" Height="75" TextAlignment="Center"/>
         <Button x:Name="btnRace" Content="Race!" HorizontalAlignment="Left" Margin="106,49,0,0" Grid.Row="1" VerticalAlignment="Top" Width="150" Height="50" TabIndex="0" Click="btnRace_Click"/>
-        <TextBox x:Name="tbHRestIncrease" HorizontalAlignment="Right" Margin="0,0,35,753" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="100" TabIndex="6" PlaceholderText="1-25"  InputScope="NumericPin"/>
-        <TextBlock x:Name="lblHRestMultiplyer" HorizontalAlignment="Right" Margin="0,0,140,0" TextWrapping="Wrap" Text="Hare Rest Increase" VerticalAlignment="Top" Height="32" Width="200" TextAlignment="Center" />
-        <TextBox x:Name="tbHRestBase" HorizontalAlignment="Right" Margin="0,0,360,753" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="100" TabIndex="5" PlaceholderText="1-100"  InputScope="NumericPin"/>
-        <TextBlock x:Name="lblHRestBase" HorizontalAlignment="Right" Margin="0,0,460,0" TextWrapping="Wrap" Text="Hare Rest Start" VerticalAlignment="Top" Height="32" Width="200" TextAlignment="Center" />
+        <TextBox x:Name="tbHRestIncrease" HorizontalAlignment="Right" Margin="0,0,40,753" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="100" TabIndex="6" PlaceholderText="1-25"  InputScope="NumericPin" Grid.Row="1"/>
+        <TextBlock x:Name="lblHRestMultiplyer" HorizontalAlignment="Right" Margin="0,0,140,0" TextWrapping="Wrap" Text="Hare Rest Increase" VerticalAlignment="Top" Height="32" Width="200" TextAlignment="Center" Grid.Row="1" />
+        <TextBox x:Name="tbHRestBase" HorizontalAlignment="Right" Margin="0,0,360,753" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="100" TabIndex="5" PlaceholderText="1-100"  InputScope="NumericPin" Grid.Row="1"/>
+        <TextBlock x:Name="lblHRestBase" HorizontalAlignment="Right" Margin="0,0,460,0" TextWrapping="Wrap" Text="Hare Rest Start" VerticalAlignment="Top" Height="32" Width="200" TextAlignment="Center" Grid.Row="1" />
         <TextBlock x:Name="lblHWins" HorizontalAlignment="Left" Margin="20,260,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Hare Wins: 0" VerticalAlignment="Top" Height="75" Width="500"  TextAlignment="Center"/>
         <TextBlock x:Name="lblTWins" HorizontalAlignment="Right" Margin="0,260,20,0" Grid.Row="1" TextWrapping="Wrap" Text="Tortoise Wins: 0" VerticalAlignment="Top" Height="75" Width="500"  TextAlignment="Center"/>
 

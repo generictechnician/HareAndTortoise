@@ -22,6 +22,14 @@ namespace HareAndTortoise
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        //Program Wide Vars and Consts
+        int hWins = 0;
+        int tWins = 0;
+
+        const string hText = "Hare Wins: ";
+        const string tText = "Tortoise Wins: ";
+
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -131,6 +139,7 @@ namespace HareAndTortoise
             //Process
             while((tLocation <= distance) && (hlocation <= distance))
             {
+                tLocation += random.Next(tMinSpeed, tMaxSpeed);//always change
                 restRand = random.Next(0,100);//generate rest chance (0 -> 100%)
                 if (restRand <= (100 - restChance))
                 {
@@ -149,8 +158,6 @@ namespace HareAndTortoise
                         restChance = 0;
                     }
                 }
-                tLocation += random.Next(tMinSpeed, tMaxSpeed);//always change
-
                 tbWin.Text = hlocation.ToString();
             } 
 
@@ -162,10 +169,14 @@ namespace HareAndTortoise
             else if (tLocation >= distance)
             {
                 tbWin.Text = "Tortoise Wins!";
+                tWins += 1;
+                lblTWins.Text = tText + tWins;
             }
             else if (hlocation >= distance)
             {
                 tbWin.Text = "Hare Wins!";
+                hWins += 1;
+                lblHWins.Text = hText + hWins;
             }
         }    
         
